@@ -1,0 +1,94 @@
+#####SOFTWARES#####
+##01.Download Data
+SRA-Toolkit v2.9.2
+md5sum v8.22
+
+##02.03.QualityControl
+FastQScreen v0.14
+Bowtie2 v2.3.5.1
+FastQC v0.11.5
+Java 1.7.0
+
+##04.Trimming adapters
+Python v3.5.2
+Cutadapt v2.1
+###############adapters.fa ???'
+
+##05.Alignment
+STAR v2.7.1
+SAMtools v1.8
+##############gencode.v38.primary...gtf
+
+##06.TranscriptAssembly
+Stringtie v2.0
+BEDTools v2.27.1
+gff3sort
+
+##07.08.Quantification
+subread v2.0.3
+gffread v0.12
+R v4.1.2
+##############GRCh38.v38.primary.assembly.genome.fa
+
+##09.CodingPotentialPrediction
+CIPHER
+Python v2.7.11
+##############geneid_transcriptid.txt BioMart same as transcript_gene.txt?
+##############nuORFdb doi: 10.1038/s41587-021-01021-3. 
+##############TransLNC doi: https://doi.org/10.1093/nar/gkab847
+
+##10.HLAtyping
+singularityv 3.2.0
+Java v1.8
+nextflow nf-core/hlatyping - optitype
+
+##11.BindingAffinityMHCPrediction
+##############Supplementary Table S3 of  https://doi.org/10.1038/s41467-020-14968-9
+netMHCpan v4.1
+R v4.0.0
+##############Jorge's data
+##############GTEx tables
+
+##13.Variant Calling
+SAMtools v1.9
+picard v2.18.12
+GATK v4.2.0.0
+##############Ch38.primary_assembly.genome.fa
+##############INDELS=/genomics/users/marta/genomes/Mills_and_1000G_gold_standard.indels.only-chr1toY.hg38.vcf.gz
+##############SNP1=/bicoh/MARGenomics/Ref_Genomes_fa/GATK_bundle/hg38/dbsnp_146.hg38.vcf
+##############SNP2=/bicoh/MARGenomics/Ref_Genomes_fa/GATK_bundle/hg38/1000G_phase1.snps.high_confidence.hg38.vcf
+##############gnomAD='/bicoh/MARGenomics/Ref_Genomes_fa/GATK_bundle/hg38/af-only-gnomad.hg38.vcf'
+##############gnomAD_biallelic='/genomics/users/marta/genomes/small_exac_common_3.hg38.vcf.gz'
+##############INTERVALS='/bicoh/MARGenomics/annotationData/ExomeTargetRegions/SureSelect.Human.AllExon.V5.50Mb_hs_hg38/SureSelect.Human.AllExon.V5.50Mb_hs_hg38.interval_list'
+tabix v0.2.6
+VEP v98
+Python v3.6.2
+##############/genomics/users/marta/genomes/GRCh38/Homo_sapiens.GRCh38.pep.all.fa - pptide prediction
+
+
+##14.Immunopeptidomics
+##############/Chong et al. 2020. Method: NewAnce (combination of MaxQuant and Comet). Samples: melanoma and lung. File: Chong_etal_2020_SupData3.xlsx
+##############/projects_eg/projects/marta/SPENCER/SPENCER_Immunogenic_peptide_info.txt
+
+#####PYTHON MODULES#####
+os
+re
+shutil
+glob
+openpyxl
+pandas
+Bio
+gtfparse
+matplotlib_venn
+matplotlib
+
+
+#####R PACKAGES#####
+tidyr
+dplyr
+rtracklayer
+ggplot2
+RColorBrewer
+devtools
+stringr
+edgeR
