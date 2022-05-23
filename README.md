@@ -8,7 +8,7 @@ Both Python3 and R languages are used, as well as bash.
 
 ### Requirements
 
-Requirements.txt file contains all programas required to run the pipeline.
+`Requirements.txt` file contains all programas required to run the pipeline.
 
 ### Reference genome
 
