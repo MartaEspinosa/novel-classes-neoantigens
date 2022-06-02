@@ -27,6 +27,6 @@ module load STAR/2.7.1a-foss-2016b
 
 STAR --runThreadN $SLURM_CPUS_PER_TASK --runMode genomeGenerate --genomeDir $GNMIDX --genomeFastaFiles $FASTADIR/GRCh38.primary_assembly.genome.fa --sjdbGTFfile $ANNOTGENE/gencode.v38.primary_assembly.annotation.gtf --sjdbOverhang 74
 
-scp -rp $GNMDIX/* "$(whoami)"@"$(hostname -s)":$GENOMEDIR/Index_Genomes_STAR/Idx_Gencode_v38_hg38_readlength75
+scp -rp $GNMDIX/* marta@hydra:$GENOMEDIR/Index_Genomes_STAR/Idx_Gencode_v38_hg38_readlength75
 rm -r $GNMDIX/*
 

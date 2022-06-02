@@ -24,4 +24,4 @@ done
 echo "### FINISHED snv2pep.###"
 echo "Output files in $OUTDIR"
 
-scp -rp ${OUTDIR} "$(whoami)"@"$(hostname -s)":$DIR
+scp -rp ${OUTDIR} marta@hydra:$DIR

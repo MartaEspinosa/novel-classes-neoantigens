@@ -16,6 +16,6 @@ module load SRA-Toolkit/2.9.2
 fastq-dump --split-files -I -O $CLUSTERDIR $line
 gzip ${CLUSTERDIR}/${line}*
 
-scp -rp ${CLUSTERDIR}/${line}*gz "$(whoami)"@"$(hostname -s)":$INDIR
+scp -rp ${CLUSTERDIR}/${line}*gz marta@hydra:$INDIR
 rm -r ${CLUSTERDIR}/${line}*gz
 

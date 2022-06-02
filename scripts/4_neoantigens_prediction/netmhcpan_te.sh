@@ -67,5 +67,5 @@ pid=$!
 wait $pid
 
 
-scp -rp ${CLUSTERDIR}/${patient} "$(whoami)"@"$(hostname -s)":$DIR/analysis/11_PeptideBindingMHC/translation_evidence_NOCDS
+scp -rp ${CLUSTERDIR}/${patient} marta@hydra:$DIR/analysis/11_PeptideBindingMHC/translation_evidence_NOCDS
 

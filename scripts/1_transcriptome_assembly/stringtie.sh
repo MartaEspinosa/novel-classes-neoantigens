@@ -25,6 +25,6 @@ name=${name##*BAM_files/}
 
 stringtie $SAMPLE -G $ANNOTATION -p $SLURM_CPUS_PER_TASK --conservative -o $CLUSTERDIR/${name}.gtf -C $CLUSTERDIR/${name}_cov.gtf
 
-scp -rp $CLUSTERDIR/${name}* "$(whoami)"@"$(hostname -s)":$OUTDIR/analysis/06_stringtie
+scp -rp $CLUSTERDIR/${name}* marta@hydra:$OUTDIR/analysis/06_stringtie
 rm -r $CLUSTERDIR/${name}*
 

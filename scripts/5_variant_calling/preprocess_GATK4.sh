@@ -86,5 +86,5 @@ gatk ApplyBQSR \
     --bqsr-recal-file $OUTDIR/$SAMPLE.recal.table \
     -O $OUTDIR/$SAMPLE.recal.bam
     
-scp -rp $OUTDIR "$(whoami)"@"$(hostname -s)":$DIR
+scp -rp $OUTDIR marta@hydra:$DIR
 rm -r $OUTDIR

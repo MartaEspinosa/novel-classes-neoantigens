@@ -27,6 +27,6 @@ COUNTS=${CLUSTERDIR}/${patient}_featureCounts.txt
 # only tumor transcriptome but both normal and tumor bam files are required
 featureCounts -p --countReadPairs -a $GTF -o $COUNTS ${BAM}/${normal}Aligned.sortedByCoord.out.bam ${BAM}/${tumor}Aligned.sortedByCoord.out.bam
 
-scp -rp $COUNTS "$(whoami)"@"$(hostname -s)":$DIR/analysis/07_quantification
+scp -rp $COUNTS marta@hydra:$DIR/analysis/07_quantification
 rm -r $COUNTS
 

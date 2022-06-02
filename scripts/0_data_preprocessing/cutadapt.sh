@@ -25,6 +25,6 @@ R2=_trimmed_2.fastq.gz
 
 cutadapt -j $SLURM_CPUS_PER_TASK -O 5 -q 30 -m 26 -b file:$6/adapters.fa -o ${CLUSTERDIR}/$name$R1 -p ${CLUSTERDIR}/$name$R2 ${FASTQDIR}/$name$ext1 ${FASTQDIR}/$name$ext2 > ${CLUSTERDIR}/${name}_cutadapt.log 
 
-scp -rp ${CLUSTERDIR}/$name$R1 "$(whoami)"@"$(hostname -s)":$OUTDIR
+scp -rp ${CLUSTERDIR}/$name$R1 marta@hydra:$OUTDIR
 rm -r ${CLUSTERDIR}/$name$R1
 

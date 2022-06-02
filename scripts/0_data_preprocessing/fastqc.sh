@@ -21,5 +21,5 @@ fastqc -t $SLURM_CPUS_PER_TASK -I -O $CLUSTERDIR $file
 name=${file##*/}
 name=${name%%_*}
 
-scp -rp $CLUSTERDIR/$name* "$(whoami)"@"$(hostname -s)":$OUTDIR
+scp -rp $CLUSTERDIR/$name* marta@hydra:$OUTDIR
 rm -r $CLUSTERDIR/$name*

@@ -21,5 +21,5 @@ fileN=${INDIR}/${normal}_{1,2}.fastq.gz #we only use the normal sample to avoid 
 
 /genomics/users/marta/tools/nextflow run nf-core/hlatyping -profile singularity --seqtype rna --input $fileN --outdir $CLUSTERDIR/$patient --enumerations 3
 
-scp -rp ${CLUSTERDIR}/${patient}* "$(whoami)"@"$(hostname -s)":$OUTDIR/analysis/10_HLAtyping
+scp -rp ${CLUSTERDIR}/${patient}* marta@hydra:$OUTDIR/analysis/10_HLAtyping
 rm -r ${CLUSTERDIR}/${patient}*

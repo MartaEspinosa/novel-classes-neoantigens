@@ -79,5 +79,5 @@ gatk --java-options -Xmx${SLURM_MEM_PER_CPU}m FilterMutectCalls \
 	--filtering-stats ${OUTDIR}/${PATIENT}_filtering.stats \
 	-O ${OUTDIR}/${PATIENT}_filtered.vcf.gz
 
-scp -rp ${OUTDIR} "$(whoami)"@"$(hostname -s)":$DIR/analysis/13_VariantCalling
+scp -rp ${OUTDIR} marta@hydra:$DIR/analysis/13_VariantCalling
 

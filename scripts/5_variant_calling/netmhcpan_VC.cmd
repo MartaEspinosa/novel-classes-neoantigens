@@ -70,5 +70,5 @@ pid=$!
 wait $pid
 
 
-scp -rp ${OUTDIR}/${patient} "$(whoami)"@"$(hostname -s)":$DIR/analysis/11_PeptideBindingMHC/variant_calling
+scp -rp ${OUTDIR}/${patient} marta@hydra:$DIR/analysis/11_PeptideBindingMHC/variant_calling
 

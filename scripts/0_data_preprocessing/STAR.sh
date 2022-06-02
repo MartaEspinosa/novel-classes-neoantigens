@@ -49,6 +49,6 @@ module load SAMtools/1.8-foss-2016b
 
 samtools index ${CLUSTERDIR}/${SAMPLE}Aligned.sortedByCoord.out.bam ${CLUSTERDIR}/${SAMPLE}Aligned.sortedByCoord.out.bai
 
-scp -rp ${CLUSTERDIR}/${SAMPLE}* "$(whoami)"@"$(hostname -s)":$DIR/analysis/05_STAR/uniquely_mapped_2pass_BAM_files
+scp -rp ${CLUSTERDIR}/${SAMPLE}* marta@hydra:$DIR/analysis/05_STAR/uniquely_mapped_2pass_BAM_files
 rm -r ${CLUSTERDIR}/${SAMPLE}*
 

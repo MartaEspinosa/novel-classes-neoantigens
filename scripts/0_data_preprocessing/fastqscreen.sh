@@ -27,5 +27,5 @@ fastq_screen --threads $SLURM_CPUS_PER_TASK --conf $config --outdir $CLUSTERDIR 
 name=${FASTQ##*/}
 name=${name%%_*}
 
-scp -rp $CLUSTERDIR/$name* "$(whoami)"@"$(hostname -s)":$OUTDIR
+scp -rp $CLUSTERDIR/$name* marta@hydra:$OUTDIR
 rm -r $CLUSTERDIR/$name*
