@@ -27,6 +27,7 @@ gff3sort
 ##07.08.Quantification
 subread v2.0.3
 gffread v0.12
+gffcompare
 R v4.1.2
 ##############GRCh38.v38.primary.assembly.genome.fa
 
