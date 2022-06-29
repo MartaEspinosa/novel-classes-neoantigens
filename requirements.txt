@@ -69,8 +69,11 @@ Python v3.6.2
 
 ##14.Immunopeptidomics
 ##############/Chong et al. 2020. Method: NewAnce (combination of MaxQuant and Comet). Samples: melanoma and lung. File: Chong_etal_2020_SupData3.xlsx
-##############/projects_eg/projects/marta/SPENCER/SPENCER_Immunogenic_peptide_info.txt
+##############SPENCER/SPENCER_Immunogenic_peptide_info.txt
+##############LncPep/pep.info.human.txt
 
+##Others
+gffcompare
 #####PYTHON MODULES#####
 os
 re
